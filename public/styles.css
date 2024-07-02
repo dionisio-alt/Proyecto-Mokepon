@@ -1,0 +1,160 @@
+@import 'https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap';
+
+body{
+    font-family:poppins,sans-serif;
+    background-color:#041562
+}
+#seleccionar-mascota{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+.titulo{
+    color:#fff;
+    font-size:32px;
+    font-family:'Fredoka One',cursive;
+}
+.subtitulo{
+    color:#fff;
+    font-size:20px
+}
+.tarjetas, .tarjetas-ataques{
+    display:flex;
+    gap:10px
+}
+.tarjeta-de-mokepon{
+    width:180px;
+    height:100px;
+    background:#11468f;
+    padding:10px;
+    box-sizing:border-box;
+    border:2px solid #1990a5;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff
+}
+.tarjeta-de-mokepon img{
+    width:80px
+}
+.tarjeta-de-mokepon {
+    /* Tu código CSS existente */
+    cursor: pointer;
+}
+.tarjeta-de-mokepon:hover {
+    background-color: #121314; /* Puedes ajustar el color como desees */
+}
+
+.tarjeta-de-mokepon.selected {
+    background-color: rgb(23, 77, 252); /* Color de fondo cuando está seleccionada */
+    color: rgb(253, 253, 253); /* Color de texto cuando está seleccionada */
+}
+.boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: 0 0;
+    border: 2px solid #1990a5;
+    color: #fff;
+    font-family: poppins, sans-serif;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+.boton-mascota:hover {
+    background-color: #121314; /* Color al pasar el mouse */
+}
+
+.boton-mascota.selected {
+    background-color: rgb(23, 77, 252); /* Color cuando está seleccionado */
+    color: rgb(253, 253, 253); /* Color de texto cuando está seleccionado */
+}
+
+input {
+    display: none;
+}
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.boton-de-ataque {
+    background-color: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 180px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+#mensajes {
+    width: 280px;
+    color: #ffffff;
+    background: #11468F;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #boton-reiniciar {
+    border: none;
+    color: #ffffff;
+    background: #11468F;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+    justify-content: center;
+  }
+  
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+.ataques-jugador,.ataques-enemigo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.ataques-enemigo {
+    margin-bottom: 20px; /* Margen inferior mayor para compensar */
+}
+.input:checked + .label {
+    
+    background-color: rgba(136, 188, 209, 0.8);
+    color: #082432;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+#ver-mapa {
+    flex-direction:column;align-items:center;justify-content:center}
+  
+#ver-mapa button{
+    color: white;
+    background:#11468f;
+    padding:10px;
+    box-sizing:border-box;
+    border:2px solid #1990a5;
+    width:80px;height:40px;
+    border-radius:20px;font-family:poppins,sans-serif;margin:4px 0}
+
+@media(max-width:553px){
+    .tarjetas,.tarjetas-ataques{
+        flex-direction:column;
+    }
+}
+@media(max-width:300px){#ver-mapa div{display:flex;align-items:center;flex-direction:column}}
